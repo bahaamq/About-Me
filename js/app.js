@@ -7,35 +7,35 @@ let userName=function(){
 
 let validateAnswer=function(question)
 {
-    let questionOne= prompt(question)
-    questionOne=questionOne.toLowerCase()
+    let questionContainer= prompt(question)
+    questionContainer=questionContainer.toLowerCase()
     // flag to break from the loop
     let answer=true
     // to force user to enter y or yes // n or no
     while(answer)
     {
-        if (questionOne==='y'||questionOne==='yes')
+        if (questionContainer==='y'||questionContainer==='yes')
         {
-            questionOne='yes'
+            questionContainer='yes'
             answer=false
             break
         }
-        else if (questionOne ==='n'||questionOne==='no')
+        else if (questionContainer ==='n'||questionContainer==='no')
         {
-            questionOne='no'
+            questionContainer='no'
             answer=false
             break
         }
         alert('Please Answer with (yes or y),(no or n)')
-        questionOne= prompt(question)
+        questionContainer= prompt(question)
      
     }
 // to return a value then check if it's correct
-if(questionOne==='yes')
+if(questionContainer==='yes')
 {
     return true
 }
-else if (questionOne==='no')
+else if (questionContainer==='no')
 {
     return false
 }
@@ -47,7 +47,7 @@ alert('Hello '+userName())
 
 // Question one 
 let questionOne=validateAnswer('My name is Bahaa ?')
-if(validateAnswer)
+if(questionOne)
 {
     alert('you  are correct!')
 }
