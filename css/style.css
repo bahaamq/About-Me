@@ -1,15 +1,17 @@
 body
 {
     background-color:tomato;
-    width: 30%;
-margin-top: 16%;
-padding-left: 33%;
+
+
 }
 main
 {
     text-align: center;
     color:whitesmoke;
     font-size: 22px;
+    width: 30%;
+margin-top: 3%;
+padding-left: 33%;
 }
 main p
 {
@@ -24,4 +26,25 @@ h1
 {
     font-size: 26px;
     font-weight: bolder;
+}
+
+ol
+{
+    list-style-type: decimal;
+    line-height: 170%;
+
+}
+ul
+{
+    list-style-type: square;
+    line-height: 170%;
+}
+
+.about p
+{
+    background-color: black;
+}
+
+div{
+    margin-bottom: 3%;
 }

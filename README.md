@@ -5,6 +5,7 @@ About Me Guessing .
 [Github Repo](https://github.com/bahaamq/About-Me)
 
 ### I made this website for my friends to check how much do they know me.
+#### it includes till now 7 questions the first five is yes or no questions, the last two are asking them if they know my fav color and food
 
 #### it was a very interesting challenge.
 #### I don't have questions, so far everything is good.
