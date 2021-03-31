@@ -75,14 +75,17 @@ else {
 }
 question2();
 // //Question three
-// let questionThree = validateAnswer('I love action movies')
-// if (questionThree) {
-//     alert('you  are wrong i love mystery')
-// }
-// else {
-//     alert('you are correct!')
-//     score++;
-// }
+function question3(){
+let questionThree = validateAnswer('I love action movies')
+if (questionThree) {
+    alert('you  are wrong i love mystery')
+}
+else {
+    alert('you are correct!')
+    score++;
+}
+}
+question3();
 
 // //Question Four
 // let questionFour = validateAnswer('I love walking!')
