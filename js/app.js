@@ -76,42 +76,42 @@ function question6(){
         alert(`the right answer was ${num}`)
     }
 }
-// question6();{
+question6();{
 
-// function question7()
-//     let food = ['pizza', 'mansaf', 'makloba', 'egg', 'Koftah', 'kbseh'];
+function question7()
+    let food = ['pizza', 'mansaf', 'makloba', 'egg', 'Koftah', 'kbseh'];
 
-//     let attempts2 = 6
-//     let loop2=true
-//     let favFoodUser = prompt('Can you guess what is my fav food ?')
-//     for (let i = 0; i < 6; i++) {
+    let attempts2 = 6
+    let loop2=true
+    let favFoodUser = prompt('Can you guess what is my fav food ?')
+    for (let i = 0; i < 6; i++) {
 
         
-//         favFoodUser = favFoodUser.toLowerCase()
-//         for (let j = 0; j < 6; j++) {
-//             if (favFoodUser == food[j]) {
-//                 alert('Amazing you are right')
-//                 score++;
-//                 alert(`i love these foods ! (possible correct answers were!) ${food}`)
-//                 loop2=false
-//             }
-// if (loop2==false)
-// {
-//     break;
-// }
-//         }
+        favFoodUser = favFoodUser.toLowerCase()
+        for (let j = 0; j < 6; j++) {
+            if (favFoodUser == food[j]) {
+                alert('Amazing you are right')
+                score++;
+                alert(`i love these foods ! (possible correct answers were!) ${food}`)
+                loop2=false
+            }
+if (loop2==false)
+{
+    break;
+}
+        }
 
-//         if (loop2==false)
-//         {
-//             break;
-//         }
+        if (loop2==false)
+        {
+            break;
+        }
 
 
-//         attempts2--
-//         favFoodUser = prompt(`you are wrong you still have ${attempts2}Can you guess one of   my fav foods ?`)
-//     }
-// }
-// question7();
+        attempts2--
+        favFoodUser = prompt(`you are wrong you still have ${attempts2}Can you guess one of   my fav foods ?`)
+    }
+}
+question7();
 
 // //Welcome Message
 // alert('Hello ' + userName())
