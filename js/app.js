@@ -62,16 +62,18 @@ question1();
 
 
 // // Question two
-// let questionTwo = validateAnswer('im 23')
-// if (questionTwo) {
-//     alert('you  are wrong i\'m 24')
-// }
+function question2(){
+let questionTwo = validateAnswer('im 23')
+if (questionTwo) {
+    alert('you  are wrong i\'m 24')
+}
 
-// else {
-//     alert('you are correct i am not 23')
-//     score++;
-// }
-
+else {
+    alert('you are correct i am not 23')
+    score++;
+}
+}
+question2();
 // //Question three
 // let questionThree = validateAnswer('I love action movies')
 // if (questionThree) {
