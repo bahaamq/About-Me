@@ -88,26 +88,30 @@ else {
 question3();
 
 // //Question Four
-// let questionFour = validateAnswer('I love walking!')
-// if (questionFour) {
-//     alert('you  are right what a good sport!')
-//     score++;
-// }
-// else {
-//     alert('you are wrong i truly love to walk!')
-// }
-
+function question4(){
+let questionFour = validateAnswer('I love walking!')
+if (questionFour) {
+    alert('you  are right what a good sport!')
+    score++;
+}
+else {
+    alert('you are wrong i truly love to walk!')
+}
+}
+question4();
 // //Question Five
-// let questionFive = validateAnswer('I know you')
+function question5(){
+let questionFive = validateAnswer('I know you')
 
-// if (questionFive) {
-//     score++
-//     alert('you  are right! , i only sent this to people that i know')
-// }
-// else {
-//     alert('you are wrong my friend!')
-// }
-
+if (questionFive) {
+    score++
+    alert('you  are right! , i only sent this to people that i know')
+}
+else {
+    alert('you are wrong my friend!')
+}
+}
+question5();
 // //Question 6 - Guess the num call
 
 //Question - 7 Guess t=my fav food.
