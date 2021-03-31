@@ -44,11 +44,12 @@ let validateAnswer = function (question) {
 }
 
 //Guess the number
-let guessFavNum = function (num) {
 
     let attempts = 4
+    let num =3
+    let userNum=""
     for (let i = 0; i < 4; i++) {
-        let userNum = prompt('Guess the number from 1-10')
+        userNum = prompt('Guess the number from 1-10')
         if (isNaN(userNum)) {
             attempts--
             alert(`ur wrong ,you still have ${attempts}`)
@@ -73,30 +74,39 @@ let guessFavNum = function (num) {
     if (attempts <= 0) {
         alert(`the right answer was ${num}`)
     }
-}
 
-let guessFavFood = function () {
+
     let food = ['pizza', 'mansaf', 'makloba', 'egg', 'Koftah', 'kbseh'];
 
-    let attempts = 6
+    let attempts2 = 6
+    let loop2=true
     let favFoodUser = prompt('Can you guess what is my fav food ?')
     for (let i = 0; i < 6; i++) {
 
-
+        
         favFoodUser = favFoodUser.toLowerCase()
         for (let j = 0; j < 6; j++) {
             if (favFoodUser == food[j]) {
                 alert('Amazing you are right')
                 score++;
                 alert(`i love these foods ! (possible correct answers were!) ${food}`)
-                return true
+                loop2=false
             }
-
-        }
-        attempts--
-        favFoodUser = prompt(`you are wrong you still have ${attempts}Can you guess one of   my fav foods ?`)
-    }
+if (loop2==false)
+{
+    break;
 }
+        }
+
+        if (loop2==false)
+        {
+            break;
+        }
+
+
+        attempts2--
+        favFoodUser = prompt(`you are wrong you still have ${attempts2}Can you guess one of   my fav foods ?`)
+    }
 
 
 //Welcome Message
@@ -158,8 +168,8 @@ else {
 }
 
 //Question 6 - Guess the num call
-guessFavNum(3)
+
 //Question - 7 Guess t=my fav food.
-guessFavFood()
+
 //Final Result
 alert(`your result is ${score}/7`)
