@@ -1,22 +1,24 @@
 # About-Me
-About Me Guessing .
 
+*About Me and Guessing game .*
 *Author:*  Bahaa Qasem.
-[Github Repo](https://github.com/bahaamq/About-Me)
+[Github Repo](https://github.com/bahaamq/About-Me).
 
-### I made this website for my friends to check how much do they know me.
-#### it includes till now 7 questions the first five is yes or no questions, the last two are asking them if they know my fav color and food
+#### About the site:
+>> I made this website for my friends to check how much do they know me.
 
-#### it was a very interesting challenge.
-#### I don't have questions, so far everything is good.
-#### it took three hours for me I was having an issue thinking of a way to make a cleaner and more organized code but then I did it correctly.
+>> It includes seven questions the first five are (yes or no) questions,  &nbsp; the last two are asking people if they know my fav num and food.
 
+#### Answering canvas questions:
+>> It was a very interesting challenge.
 
-# Pair programming Process
+>> I don't have questions, so far everything is good.
+
+>> It took three hours for me. I was trying to do the best I can to have  **cleaner** and more organized code.
+
+#### Pair programming Process
 ***about programming Process.***
+> *Navigotor: Bahaa Qasem.*
 
->navigotor: Bahaa Qasem.
+> *Driver: Ahmad Abudames.*
 
->driver: Ahmad Abudames .
-
-***i added function for each questions .***

@@ -1,13 +1,17 @@
 'use strict'
 
-let score = 0;
+//Responsible For Global variable to calculate the correct answers.
+let score = 0
+
+//Responsible For returninng 
 let userName = function () {
     let user = prompt('What\'s your name')
     return user
 }
 
-let validateAnswer = function (question) {
 
+// Responsible For Validating all (y/n)Questions (1-5).
+let validateAnswer = function (question) {
     let questionContainer = ""
     // flag to break from the loop
     let answer = true
@@ -30,7 +34,6 @@ let validateAnswer = function (question) {
             alert('Please Answer with (yes or y),(no or n)')
         }
 
-
     }
     // to return a value then check if it's correct
     if (questionContainer === 'yes') {
@@ -48,75 +51,66 @@ alert('Hello ' + userName())
 // Question one 
 function question1() {
 
-
     let questionOne = validateAnswer('My name is Bahaa ?')
     if (questionOne) {
         alert('you  are correct!')
-        score++;
+        score++
     }
     else {
         alert('you are wrong!')
     }
 }
-question1();
 
 
 // // Question two
-function question2(){
-let questionTwo = validateAnswer('im 23')
-if (questionTwo) {
-    alert('you  are wrong i\'m 24')
-}
+function question2() {
+    let questionTwo = validateAnswer('im 23')
+    if (questionTwo) {
+        alert('you  are wrong i\'m 24')
+    }
 
-else {
-    alert('you are correct i am not 23')
-    score++;
+    else {
+        alert('you are correct i am not 23')
+        score++
+    }
 }
-}
-question2();
 // //Question three
-function question3(){
-let questionThree = validateAnswer('I love action movies')
-if (questionThree) {
-    alert('you  are wrong i love mystery')
+function question3() {
+    let questionThree = validateAnswer('I love action movies')
+    if (questionThree) {
+        alert('You  are wrong i love mysteries!')
+    }
+    else {
+        alert('You are correct!')
+        score++
+    }
 }
-else {
-    alert('you are correct!')
-    score++;
-}
-}
-question3();
 
 // //Question Four
-function question4(){
-let questionFour = validateAnswer('I love walking!')
-if (questionFour) {
-    alert('you  are right what a good sport!')
-    score++;
+function question4() {
+    let questionFour = validateAnswer('I love walking!')
+    if (questionFour) {
+        alert('You  are right what a good sport!')
+        score++
+    }
+    else {
+        alert('You are wrong i truly love to walk!')
+    }
 }
-else {
-    alert('you are wrong i truly love to walk!')
-}
-}
-question4();
 // //Question Five
-function question5(){
-let questionFive = validateAnswer('I know you')
+function question5() {
+    let questionFive = validateAnswer('I know you')
 
-if (questionFive) {
-    score++
-    alert('you  are right! , i only sent this to people that i know')
+    if (questionFive) {
+        score++
+        alert('You  are right! , i only sent this to people that i know')
+    }
+    else {
+        alert('You are wrong my friend!')
+    }
 }
-else {
-    alert('you are wrong my friend!')
-}
-}
-question5();
-// //Question 6 - Guess the num call
 
-//Question - 7 Guess t=my fav food.
-
-//Guess the number
+//Guess the number - Question 6
 function question6() {
 
     let attempts = 4
@@ -126,66 +120,66 @@ function question6() {
         userNum = prompt('Guess the number from 1-10')
         if (isNaN(userNum)) {
             attempts--
-            alert(`ur wrong ,you still have ${attempts}`)
+            alert(`Wrong answer! ,you still have ${attempts} attempts`)
             continue
         }
         else if (userNum < num) {
             attempts--
-            alert(`too low ,you still have ${attempts}`)
+            alert(`Too low ,you still have ${attempts} attempts `)
             continue
         }
         else if (userNum > num) {
             attempts--
-            alert(`too High, you still have ${attempts}`)
+            alert(`Too high, you still have ${attempts} attempts`)
             continue
         }
         else {
-            alert(`Thanks you are right   ${num}`)
+            alert(`Thanks you are right ${num} is the correct answer!`)
             score++
             break
         }
     }
+    // This will only run if the user lost all attempts without guessing the number
     if (attempts <= 0) {
         alert(`the right answer was ${num}`)
     }
 }
-question6();
+
+//Question - 7 Guess one of my fav snacks.
 
 function question7() {
     let food = ['pizza', 'mansaf', 'makloba', 'egg', 'Koftah', 'kbseh'];
 
-    let attempts2 = 6
-    let loop2 = true
+    let attempts = 6
     let favFoodUser = prompt('Can you guess what is my fav food ?')
+    loop1:
     for (let i = 0; i < 6; i++) {
-
-
         favFoodUser = favFoodUser.toLowerCase()
+
         for (let j = 0; j < 6; j++) {
             if (favFoodUser == food[j]) {
                 alert('Amazing you are right')
                 score++;
                 alert(`i love these foods ! (possible correct answers were!) ${food}`)
-                loop2 = false
-            }
-            if (loop2 == false) {
-                break;
+                break loop1;
             }
         }
-
-        if (loop2 == false) {
-            break;
-        }
-
-
-        attempts2--
-        favFoodUser = prompt(`you are wrong you still have ${attempts2}Can you guess one of   my fav foods ?`)
+//As long as the answer is wrong this part will run.
+        attempts--
+        favFoodUser = prompt(`you are wrong you still have
+         ${attempts}attempts ,Can you guess one of my fav foods ?`)
+         // End of this part.
     }
 }
 
-question7();
 
-
-
+//Calling functions .
+question1()
+question2()
+question3()
+question4()
+question5()
+question6()
+question7()
 //Final Result
-// alert(`your result is ${score}/7`)
+alert(`Your final result is ${score}/7`)
