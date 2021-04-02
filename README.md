@@ -16,7 +16,7 @@
 
 >> It took three hours for me. I was trying to do the best I can to have  **cleaner** and more organized code.
 
-#### Pair programming Process
+#### Pair programming Process:
 ***about programming Process.***
 > *Navigotor: Bahaa Qasem.*
 
